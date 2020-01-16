@@ -2,19 +2,17 @@
 # Найдите самую большую цифру в числе.
 # Для решения используйте цикл while и арифметические операции.
 
-number = int(input("Введите целое число: "))
+i = int(input("Введите целое число: "))
 
-print(number // 100)
+mx = 0
+# цикл до тех пор пока i больше 0
+while i > 0:
+    #  деление по модулю
+    c = i % 10
+    #  если с > 0 то mx = делению по модулю
+    if c >= mx:
+        mx = c
+    # i равняется целочисленному делению на 10
+    i = i // 10
 
-print((number % 100) // 10)
-
-print(number % 10)
-
-i = number
-
-#for b in number:
-#    print(b)
-
-#while number > 0:
-#    number // 10
-#    print(number)
+print(mx)
