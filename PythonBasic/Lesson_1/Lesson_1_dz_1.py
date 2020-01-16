@@ -14,3 +14,4 @@ print(number)
 
 words = input("Введите слово: ")
 print(words)
+

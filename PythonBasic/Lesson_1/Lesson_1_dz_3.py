@@ -16,3 +16,4 @@ number = int(n) + int(nn) + int(nnn)
 
 # выводим сумму
 print(number)
+

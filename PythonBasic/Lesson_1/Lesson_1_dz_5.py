@@ -20,3 +20,4 @@ elif cost > revenue:
 
 staff = int(input("Введите количество сотрудников: "))
 print(f"Прибыль фирмы в расчете на одного сотрудника: {(revenue - cost) / staff}")
+
