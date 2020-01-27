@@ -23,3 +23,13 @@ for i in range(1, len(num_list)):
         new_num_list.append(num_list[i])
 
 print(new_num_list)
+
+
+
+##################################################### Второй вариант #######################################
+
+a = [randint(1, 300) for i in range(20)]
+print(a)
+
+b = [a[i] for i in range(1, len(a)) if a[i] > a[i - 1]]
+print(b)
