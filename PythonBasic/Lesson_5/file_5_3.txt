@@ -1,0 +1,9 @@
+Palpatine 100000.00
+DarthVader 50000.00
+LeiaOrgana 5000.50
+LukeSkywalker 4500.10
+HanSolo 19550.00
+Lando 9990.00
+ObiWanKenobi 4000.00
+Yoda 1000.00
+Rey 4500.00
