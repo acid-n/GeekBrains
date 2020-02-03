@@ -58,17 +58,21 @@ class WorkCar(Car):
 
 
 class PoliceCar(Car):
+    # берем все что передали и создаем с этими параметрами Car, плюс добавляем сюда is_police
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs, is_police=True)
+
     def show_speed(self):
         if self.speed > 60 and self.is_police == True:
             print(f"Скорость автомобиля {self.speed}. Это полицейская машина. Идет погоня.")
         else:
-            print(f"Скорость автомобиля: {self.speed}")
+            print(f"Скорость полицейского автомобиля: {self.speed}")
 
 
 town_car = TownCar(80, 'Blue', 'Lada')
 sport_car = SportCar(80, 'Red', 'Porsche')
 work_car = WorkCar(60, 'Yellow', 'Volvo')
-police_car = PoliceCar(120, 'Black', 'Maybach', True)
+police_car = PoliceCar(120, 'Black', 'Maybach')
 
 print(f"\nАвтомобиль {town_car.name}, цвета {town_car.color}.")
 town_car.go()
