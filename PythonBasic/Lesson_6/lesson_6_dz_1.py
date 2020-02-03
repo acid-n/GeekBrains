@@ -10,8 +10,8 @@ from time import sleep
 
 
 class TrafficLight:
-    def __init__(self, color):
-        self.__color = color
+    def __init__(self):
+        self.__color = ["Красный", "Желтый", "Зеленый"]
 
     # определяем метод running с бесконечным циклом и выводом цвета сфетофора
     # указываем задержку в секундах для каждого цвет (красный - 7, желтый - 2 и зеленый - 7 секунд)
@@ -28,8 +28,6 @@ class TrafficLight:
             sleep(2)
 
 
-color = ["Красный", "Желтый", "Зеленый"]
-
-a = TrafficLight(color)
+a = TrafficLight()
 
 a.running()
