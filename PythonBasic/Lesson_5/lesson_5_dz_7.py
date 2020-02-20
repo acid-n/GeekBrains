@@ -38,4 +38,4 @@ js_list.append(avar_pr)
 print(js_list)
 
 with open("file_5_7_json.json", "w") as write_f:
-    json.dump(js_list, write_f, ensure_ascii=False)
+    json.dump(js_list, write_f, ensure_ascii=False, indent=4)
