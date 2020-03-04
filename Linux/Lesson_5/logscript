@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo Смотрим файл /var/log/auth.log на ошибки типа Failed и Failure
+egrep "Failed|Failure" /var/log/auth.log
