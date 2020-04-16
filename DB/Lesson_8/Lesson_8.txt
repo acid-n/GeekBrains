@@ -1,0 +1,76 @@
+Переписать запросы, заданые к ДЗ урока 6 с использованием JOIN
+
+
+2. Подсчитать общее количество лайков, которые получили 10 самых молодых пользователей.
+SELECT
+    (SELECT CONCAT(first_name, ' ', last_name) FROM users where id = profiles.user_id) AS users,
+    (SELECT COUNT(*) from likes where target_id = profiles.user_id) AS likes,
+    birthday
+    FROM profiles
+    ORDER BY birthday DESC limit 10;
+
+Переделал запрос
+SELECT users.id, first_name, last_name, birthday, COUNT(*) AS total_likes
+  FROM users
+    JOIN likes
+      ON users.id = likes.target_id
+    JOIN profiles
+      ON users.id = profiles.user_id
+  GROUP BY users.id
+  ORDER BY birthday DESC
+  LIMIT 10;
+
+Правда не смог понять, почему появилась разница в выводе данных этих двух запросов (старый и новый).
+Запрос с JOIN теперь выводит все правильно и красиво. В первом (старом) запросе теперь есть неточности.
+
+
+
+3. Определить кто больше поставил лайков (всего) - мужчины или женщины?
+SELECT
+    (SELECT SUM((SELECT COUNT(*) FROM likes WHERE user_id = profiles.user_id))
+    FROM profiles where gender = 'm') AS m_likes,
+    (SELECT SUM((SELECT COUNT(*) FROM likes WHERE user_id = profiles.user_id))
+    FROM profiles where gender = 'f') AS f_likes
+    FROM profiles limit 1;
+
+
+SELECT
+    (SELECT
+        SUM((SELECT COUNT(*)
+            FROM likes JOIN profiles ON gender = 'm'
+            WHERE likes.user_id = profiles.user_id))) AS m_likes,
+    (SELECT
+        SUM((SELECT COUNT(*)
+            FROM likes JOIN profiles ON gender = 'f'
+            WHERE likes.user_id = profiles.user_id))) AS f_likes
+    FROM profiles LIMIT 1;
+
+Очень странное решение получилось. Оказалось больше предыдущего по объему кода. Возможно его можно решить проще. Пока не понял как.
+
+
+4. Найти 10 пользователей, которые проявляют наименьшую активность в использовании социальной сети.
+SELECT
+    (SELECT CONCAT(first_name, ' ', last_name) FROM users where id = profiles.user_id) AS users,
+    (
+        (SELECT COUNT(*) from likes where user_id = profiles.user_id) +
+        (SELECT COUNT(*) from media where user_id = profiles.user_id) +
+        (SELECT COUNT(*) from messages where from_user_id = profiles.user_id)
+    ) AS total
+    FROM profiles
+    ORDER BY total limit 10;
+
+
+Вроде бы даже результаты совпадают
+
+SELECT
+    CONCAT(first_name, ' ', last_name) AS owner,
+    (COUNT(DISTINCT likes.id) + COUNT(DISTINCT media.id) + COUNT(DISTINCT messages.id)) AS ALL_TOTAL
+    FROM
+        users
+        LEFT JOIN likes ON likes.user_id = users.id
+        LEFT JOIN media ON media.user_id = users.id
+        LEFT JOIN messages ON messages.from_user_id = users.id
+    GROUP BY users.id
+    ORDER BY ALL_TOTAL LIMIT 10;
+
+
