@@ -1,0 +1,146 @@
+1. Проанализировать какие запросы могут выполняться наиболее часто в процессе работы приложения и добавить необходимые индексы.
+
+a)
+-- Таблица users: уникальные индексы для email и phone. Не уверен, но все же простые индексы по first_name и last_name.
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE UNIQUE INDEX users_email_uq ON users(email);
+CREATE UNIQUE INDEX users_phone_uq ON users(phone);
+CREATE INDEX users_first_name_idx ON users(first_name);
+CREATE INDEX users_last_name_idx ON users(last_name);
+
+-- плюс составной возможен
+CREATE INDEX users_email_phone ON users(email, phone);
+
+b)
+-- Таблица profiles: уникальных индексов здесь не вижу.
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE INDEX profiles_birthday_idx ON profiles(birthday);
+CREATE INDEX profiles_city_idx ON profiles(city);
+CREATE INDEX profiles_country_idx ON profiles(country);
+
+-- Не уверен, что на колонку gender, где у нас только два значения m и f, нужен индекс. Если только в составном.
+
+CREATE INDEX profiles_gender_birthday ON profiles(gender, birthday);
+
+c)
+-- Таблица posts: уникальный индекс вижу только для head, так как возможе поиск по заголовку (хотя по тексту в body тоже возможен поиск).
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE INDEX posts_user_id_idx ON posts(user_id);
+CREATE INDEX posts_community_id_idx ON posts(community_id);
+CREATE INDEX posts_user_id_idx ON posts(media_id);
+
+CREATE UNIQUE INDEX posts_head_uq ON posts(head);
+
+-- составное возможно будет из user_id и community_id
+CREATE INDEX posts_user_id_community_id ON posts(user_id, community_id);
+
+-- еще один составной возможен из user_id и media_id
+CREATE INDEX posts_user_id_media_id ON posts(user_id, media_id);
+
+d)
+-- Таблица messages: уникальных индексов здесь не вижу.
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE INDEX messages_from_user_id_idx ON messages(from_user_id);
+CREATE INDEX messages_to_user_id_idx ON messages(to_user_id);
+
+-- составной будет из from_user_id и to_user_id
+CREATE INDEX messages_from_user_id_to_user_id ON messages(from_user_id, to_user_id);
+
+f)
+-- Таблица media: уникальных индексов здесь не вижу.
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE INDEX media_media_type_id_idx ON media(media_type_id);
+CREATE INDEX media_user_id_idx ON media(user_id);
+CREATE INDEX media_file_path_idx ON media(file_path);
+CREATE INDEX media_size_idx ON media(size);
+
+-- не уверен, стоит ли индексировать колонку metadata так как она JSON
+
+-- составные индексы
+
+CREATE INDEX media_media_type_id_user_id ON media(media_type_id, user_id);
+CREATE INDEX media_media_type_id_size ON media(media_type_id, size);
+CREATE INDEX media_media_type_id_file_path ON media(media_type_id, file_path);
+
+g)
+-- Таблица likes: уникальных индексов здесь не вижу.
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE INDEX likes_user_id_idx ON likes(user_id);
+CREATE INDEX likes_target_id_idx ON likes(target_id);
+CREATE INDEX likes_target_type_id_idx ON likes(target_type_id);
+
+-- составные индексы
+CREATE INDEX likes_user_id_target_id ON likes(user_id, target_id);
+CREATE INDEX likes_target_id_target_type_id ON likes(target_id, target_type_id);
+
+h)
+-- Таблица target_types
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE UNIQUE INDEX target_types_name_uq ON target_types(name);
+
+j)
+-- Таблица friendship:
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE INDEX friendship_user_id_idx ON friendship(user_id);
+CREATE INDEX friendship_friend_id_idx ON friendship(friend_id);
+CREATE INDEX friendship_status_id_idx ON friendship(status_id);
+
+k)
+-- Таблица friendship_statuses:
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE INDEX friendship_statuses_name_idx ON friendship_statuses(name);
+
+l)
+-- Таблица communities
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE INDEX communities_name_idx ON communities(name);
+
+m)
+-- Таблица communities_users
+-- Соблюдаем правило: создаем индексы для колонок, которые присутствуют в условии WHERE и по которым происходт сортировка.
+
+CREATE INDEX communities_users_community_id_idx ON communities_users(community_id);
+CREATE INDEX communities_users_user_id_idx ON communities_users(user_id);
+
+
+2. Задание на оконные функции.
+Провести аналитику в разрезе групп.
+Построить запрос, который будет выводить следующие столбцы:
+
+    имя группы
+    среднее количество пользователей в группах
+    самый молодой пользователь в группе
+    самый пожилой пользователь в группе
+    количество пользователей в группе
+    всего пользователей в системе
+    отношение в процентах (количество пользователей в группе / всего пользователей в системе) * 100
+
+
+Мое решение, явно где-то упускаю момент по подсчетам... наверняка все проще
+
+SELECT DISTINCT communities.name,
+    AVG(communities_users.user_id) OVER w AS average,
+    MAX(profiles.birthday) OVER w AS youngest_user,
+    MIN(profiles.birthday) OVER w AS oldest_user,
+    COUNT(communities_users.user_id) OVER w AS count_user,
+    COUNT(*) OVER() AS all_users,
+    SUM(communities_users.user_id) OVER w / SUM(users.id) OVER() * 100 AS "%%"
+                FROM (communities
+                     LEFT JOIN communities_users
+                         ON communities.id = communities_users.community_id
+                     LEFT JOIN users
+                         ON communities_users.user_id = users.id
+                     LEFT JOIN profiles
+                         ON profiles.user_id = communities_users.user_id)
+                         WINDOW w AS (PARTITION BY communities.id);
+
