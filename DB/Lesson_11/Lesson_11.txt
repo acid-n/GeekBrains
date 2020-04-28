@@ -61,7 +61,6 @@ redis-cli
 4) Организуйте хранение категорий и товарных позиций учебной базы данных shop в СУБД MongoDB.
 
 >show dbs
->db.shop.insert({name: 'Александр'})
 
 Категории
 >db.shop.insert({id: 1, name: 'Процессоры'})
