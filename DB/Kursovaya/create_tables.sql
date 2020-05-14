@@ -201,7 +201,6 @@ CREATE INDEX store_profiles_store_id_idx ON store_profiles(store_id);
 CREATE INDEX store_profiles_store_url_idx ON store_profiles(store_url);
 CREATE INDEX store_profiles_img_back_store_id_idx ON store_profiles(img_back_store_id);
 
-CREATE INDEX store_posts_store_id_idx ON store_posts(store_id);
 CREATE UNIQUE INDEX store_posts_head_uq ON store_posts(head);
 CREATE INDEX store_posts_media_id_idx ON store_posts(media_id);
 
