@@ -1,0 +1,51 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.menu li {
+    list-style-type: none;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: Verdana;
+}
+
+.menu li a {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.prod {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.shot_desc {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.detailed_desc {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.attention {
+    list-style-image: url("img/list2.png");
+    list-style-type: circle;
+    color: brown;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact_form input {
+    width: 200px;
+    height: 20px;
+    color: brown;
+}
