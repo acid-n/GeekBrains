@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.header {
+    width: 1920px;
+    height: 725px;
+    background-image: url("img/header_back.jpg");
+}
+
+.header_menu {
+    width: 1920px;
+    height: 83px;
+    background-image: url("img/menu_back.svg");
+
+}
