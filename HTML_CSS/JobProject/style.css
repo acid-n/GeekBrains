@@ -13,11 +13,39 @@
     width: 1920px;
     height: 725px;
     background-image: url("img/header_back.jpg");
+    padding-top: 13px;
 }
 
 .header_menu {
     width: 1920px;
     height: 83px;
     background-image: url("img/menu_back.svg");
+}
 
+.logo {
+    padding-top: 19px;
+    padding-left: 475px;
+    width: 172px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 22.36px;
+    float: left;
+}
+
+.logo-text-header {
+    font-size: 36px;
+    letter-spacing: 0.77px;
+}
+
+.logo-text {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 64.41px;
+}
+
+.logo-phone {
+    padding-top: 28px;
+    padding-left: 158px;
+    width: 130px;
 }
