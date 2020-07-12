@@ -162,3 +162,20 @@
     margin-top: 25px;
     background-color: #ffffff;
 }
+
+.new-flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-sidebar1 {
+    flex: 1 1 100px;
+}
+
+.flex-sidebar2 {
+    flex: 1 1 100px;
+}
+
+.flex-main {
+    flex: 2 1 200px;
+}
