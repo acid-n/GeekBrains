@@ -5,7 +5,8 @@
 .header {
     display: flex;
     flex-flow: row wrap;
-    background-image: url("../img-flex/header.png");
+    background-image: url("../img-flex/header_2x.png");
+    background-size: 100%;
 }
 
 .logo {
@@ -122,4 +123,19 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #6c6c6c;
+}
+
+.banner-pagination {
+    display: flex;
+    flex: 1 1 100%;
+    padding-top: 140px;
+    justify-content: center;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
