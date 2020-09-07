@@ -1,0 +1,22 @@
+.header {
+    height: 100px;
+}
+
+.desk {
+    position: absolute;
+    left: 400px;
+    height: 160px;
+    width: 150px;
+}
+
+td {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
