@@ -1,0 +1,55 @@
+2020-12-15 22:41:37,722 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:41:37,723 - INFO - server.py - Запущен сервер, порт для подключения 8888, адрес 
+2020-12-15 22:42:43,154 - INFO - server.py - Установлено соединение ('127.0.0.1', 37952)
+2020-12-15 22:42:43,154 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 37952)>,), {}.Вызов из модуля common.utils.
+2020-12-15 22:42:43,154 - INFO - server.py - Клиент ('127.0.0.1', 37952) отключился от сервера
+2020-12-15 22:43:41,201 - INFO - server.py - Установлено соединение ('127.0.0.1', 37960)
+2020-12-15 22:43:41,202 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 37960)>,), {}.Вызов из модуля common.utils.
+2020-12-15 22:43:41,202 - INFO - server.py - Клиент ('127.0.0.1', 37960) отключился от сервера
+2020-12-15 22:45:15,204 - INFO - server.py - Установлено соединение ('127.0.0.1', 37978)
+2020-12-15 22:45:15,204 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 37978)>,), {}.Вызов из модуля common.utils.
+2020-12-15 22:45:15,205 - INFO - server.py - Клиент ('127.0.0.1', 37978) отключился от сервера
+2020-12-15 22:46:12,797 - INFO - server.py - Установлено соединение ('127.0.0.1', 37994)
+2020-12-15 22:46:12,797 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 37994)>,), {}.Вызов из модуля common.utils.
+2020-12-15 22:46:12,797 - INFO - server.py - Клиент ('127.0.0.1', 37994) отключился от сервера
+2020-12-15 22:46:20,187 - INFO - server.py - Установлено соединение ('127.0.0.1', 37996)
+2020-12-15 22:46:20,688 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 37996)>,), {}.Вызов из модуля common.utils.
+2020-12-15 22:46:20,688 - INFO - server.py - Клиент ('127.0.0.1', 37996) отключился от сервера
+2020-12-15 23:00:05,675 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:00:05,676 - INFO - server.py - Запущен сервер, порт для подключения 8888, адрес 
+2020-12-15 23:00:13,235 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:00:13,235 - INFO - server.py - Запущен сервер, порт для подключения 8888, адрес 
+2020-12-15 23:00:17,877 - INFO - server.py - Установлено соединение ('127.0.0.1', 38198)
+2020-12-15 23:00:17,878 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 38198)>,), {}.Вызов из модуля common.utils.
+2020-12-15 23:00:17,878 - INFO - server.py - Клиент ('127.0.0.1', 38198) отключился от сервера
+2020-12-15 23:00:31,026 - INFO - server.py - Установлено соединение ('127.0.0.1', 38200)
+2020-12-15 23:00:31,026 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 38200)>,), {}.Вызов из модуля common.utils.
+2020-12-15 23:00:31,026 - INFO - server.py - Клиент ('127.0.0.1', 38200) отключился от сервера
+2020-12-15 23:00:49,797 - INFO - server.py - Установлено соединение ('127.0.0.1', 38202)
+2020-12-15 23:00:49,797 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 38202)>,), {}.Вызов из модуля common.utils.
+2020-12-15 23:00:49,797 - INFO - server.py - Клиент ('127.0.0.1', 38202) отключился от сервера
+2020-12-15 23:04:25,049 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:04:25,050 - INFO - server.py - Запущен сервер, порт для подключения 8888, адрес 
+2020-12-15 23:04:37,452 - INFO - server.py - Установлено соединение ('127.0.0.1', 38240)
+2020-12-15 23:04:37,952 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 38240)>,), {}.Вызов из модуля common.utils.
+2020-12-15 23:04:37,953 - INFO - server.py - Клиент ('127.0.0.1', 38240) отключился от сервера
+2020-12-15 23:04:42,152 - INFO - server.py - Установлено соединение ('127.0.0.1', 38242)
+2020-12-15 23:04:42,152 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 38242)>,), {}.Вызов из модуля common.utils.
+2020-12-15 23:04:42,152 - INFO - server.py - Клиент ('127.0.0.1', 38242) отключился от сервера
+2020-12-15 23:07:05,470 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:05,470 - INFO - server.py - Запущен сервер, порт для подключения 8888, адрес 
+2020-12-15 23:07:09,344 - INFO - server.py - Установлено соединение ('127.0.0.1', 38278)
+2020-12-15 23:07:09,845 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 38278)>,), {}.Вызов из модуля common.utils.
+2020-12-15 23:07:09,845 - INFO - server.py - Клиент ('127.0.0.1', 38278) отключился от сервера
+2020-12-15 23:07:14,659 - INFO - server.py - Установлено соединение ('127.0.0.1', 38280)
+2020-12-15 23:07:14,660 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 38280)>,), {}.Вызов из модуля common.utils.
+2020-12-15 23:07:14,660 - INFO - server.py - Клиент ('127.0.0.1', 38280) отключился от сервера
+2020-12-15 23:07:30,536 - INFO - server.py - Установлено соединение ('127.0.0.1', 38282)
+2020-12-15 23:07:30,536 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 38282)>,), {}.Вызов из модуля common.utils.
+2020-12-15 23:07:30,536 - INFO - server.py - Клиент ('127.0.0.1', 38282) отключился от сервера
+2020-12-15 23:07:36,447 - INFO - server.py - Установлено соединение ('127.0.0.1', 38284)
+2020-12-15 23:07:36,447 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 38284)>,), {}.Вызов из модуля common.utils.
+2020-12-15 23:07:36,447 - INFO - server.py - Клиент ('127.0.0.1', 38284) отключился от сервера
+2020-12-15 23:07:43,975 - INFO - server.py - Установлено соединение ('127.0.0.1', 38288)
+2020-12-15 23:07:43,975 - DEBUG - decos.py - Была вызвана функция get_message с параметрами (<socket.socket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8888), raddr=('127.0.0.1', 38288)>,), {}.Вызов из модуля common.utils.
+2020-12-15 23:07:43,975 - INFO - server.py - Клиент ('127.0.0.1', 38288) отключился от сервера
