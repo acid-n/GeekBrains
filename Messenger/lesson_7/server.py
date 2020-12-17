@@ -18,7 +18,7 @@ LOGGER = logging.getLogger('server')
 
 
 @log
-def handler_client_message(message):
+def handler_client_message(message, messages_list, client):
     '''
     Обрабатывает сообщения от клиента, принимает словарь - сообщение от клиента
     проверяет корректность, возвращает словарь для ответа клиента

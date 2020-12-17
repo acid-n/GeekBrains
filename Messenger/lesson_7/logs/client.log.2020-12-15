@@ -1,0 +1,87 @@
+2020-12-15 22:42:43,153 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:42:43,153 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 22:42:43,154 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 22:42:43,154 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:42:43,154 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37952), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608061363.1540098, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 22:43:41,201 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:43:41,201 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, send
+2020-12-15 22:43:41,201 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 22:43:41,201 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:43:41,201 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37960), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608061421.201752, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 22:43:41,202 - ERROR - client.py - Не удалось декодировать полученную JSON строку.
+2020-12-15 22:45:15,204 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:45:15,204 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 22:45:15,204 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 22:45:15,204 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:45:15,204 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37978), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608061515.2045588, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 22:45:15,204 - ERROR - client.py - Не удалось декодировать полученную JSON строку.
+2020-12-15 22:46:12,796 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:46:12,796 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 22:46:12,796 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 22:46:12,797 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:46:12,797 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37994), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608061572.7969587, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 22:46:12,797 - ERROR - client.py - Не удалось декодировать полученную JSON строку.
+2020-12-15 22:46:20,187 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:46:20,187 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 22:46:20,187 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 22:46:20,187 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:46:20,187 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 37996), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608061580.1875167, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 22:46:20,688 - ERROR - client.py - Не удалось декодировать полученную JSON строку.
+2020-12-15 22:59:05,030 - ERROR - client.py - Не удалось декодировать полученную JSON строку.
+2020-12-15 22:59:55,376 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 22:59:55,377 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 22:59:55,377 - CRITICAL - client.py - Не удалось подключиться к серверу 127.0.0.1:8888, конечный компьютер отверг запрос на подключение.
+2020-12-15 23:00:17,877 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:00:17,877 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 23:00:17,877 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 23:00:17,877 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:00:17,877 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38198), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608062417.8777843, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 23:00:31,026 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:00:31,026 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 23:00:31,026 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 23:00:31,026 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:00:31,026 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38200), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608062431.0263453, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 23:00:49,797 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:00:49,797 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 23:00:49,797 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 23:00:49,797 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:00:49,797 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38202), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608062449.7975237, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 23:00:49,797 - ERROR - client.py - Не удалось декодировать полученную JSON строку.
+2020-12-15 23:04:37,451 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:04:37,451 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 23:04:37,451 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 23:04:37,452 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:04:37,452 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38240), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608062677.4519336, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 23:04:42,152 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:04:42,152 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 23:04:42,152 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 23:04:42,152 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:04:42,152 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38242), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608062682.152615, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 23:04:42,152 - ERROR - client.py - Не удалось декодировать полученную JSON строку.
+2020-12-15 23:07:09,344 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:09,344 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 23:07:09,344 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 23:07:09,344 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:09,345 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38278), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608062829.3448188, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 23:07:14,659 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:14,659 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 23:07:14,659 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 23:07:14,659 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:14,660 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38280), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608062834.6599028, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 23:07:14,660 - ERROR - client.py - Не удалось декодировать полученную JSON строку.
+2020-12-15 23:07:30,536 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:30,536 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, send
+2020-12-15 23:07:30,536 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 23:07:30,536 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:30,536 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38282), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608062850.5363188, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 23:07:36,446 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:36,447 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, send
+2020-12-15 23:07:36,447 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 23:07:36,447 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:36,447 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38284), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608062856.447201, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 23:07:43,975 - DEBUG - decos.py - Была вызвана функция create_arg_parser с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:43,975 - INFO - client.py - Запущен клиент с параметрами: 127.0.0.1, 8888, listen
+2020-12-15 23:07:43,975 - DEBUG - client.py - Сформировано presence сообщение для пользователя Guest
+2020-12-15 23:07:43,975 - DEBUG - decos.py - Была вызвана функция create_request с параметрами (), {}.Вызов из модуля __main__.
+2020-12-15 23:07:43,975 - DEBUG - decos.py - Была вызвана функция send_message с параметрами (<socket.socket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 38288), raddr=('127.0.0.1', 8888)>, {'action': 'presence', 'time': 1608062863.975615, 'user': {'account_name': 'Guest'}}), {}.Вызов из модуля common.utils.
+2020-12-15 23:07:43,975 - ERROR - client.py - Не удалось декодировать полученную JSON строку.
