@@ -109,7 +109,7 @@ def main():
                 try:
                     handler_client_message(get_message(client_with_message), messages, client_with_message)
                 except:
-                    LOGGER.info(f'Клиент {client_with_message.getpeername()} отключился от сервера')
+                    # LOGGER.info(f'Клиент {client_with_message.getpeername()} отключился от сервера')
                     clients.remove(client_with_message)
 
         # если есть сообщения для отправки и ожидающие клиенты, отправляем им сообщение

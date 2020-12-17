@@ -31,10 +31,10 @@ def create_message(sock, account_name='Guest'):
     # Запрашиваем текст сообщения и возращаем его
     message = input('Введите сообщение или \'!!!\' для завершения работы: ')
     if message == '!!!':
-        sock.close()
         LOGGER.info('Завершение работы по команде пользователя')
         print(f'Спасибо! Было приятно с вами пообщаться.')
         sys.exit()
+        sock.close()
     message_dict = {
         ACTION: MESSAGE,
         TIME: time.time(),
