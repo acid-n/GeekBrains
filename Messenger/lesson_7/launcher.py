@@ -1,5 +1,9 @@
 import subprocess
 import shlex
+import time
+import os
+import signal
+
 
 PROCESS = []
 
@@ -10,30 +14,16 @@ while True:
     if ANSWER == 'q':
         break
     elif ANSWER == 's':
-        PROCESS.append(subprocess.Popen(
-            shlex.split("""x-terminal-emulator -e 'python3 server.py'"""),
-            stdout=subprocess.PIPE
-            # 'python3 server.py',
-            # shell=True
-            # creationflags=subprocess.CREATE_NEW_CONSOLE
-        ))
+        PROCESS.append(subprocess.Popen('gnome-terminal -- python3 server.py', shell=True))
+        time.sleep(0.5)
         for i in range(2):
-            PROCESS.append(subprocess.Popen(
-                shlex.split("""x-terminal-emulator -e 'python3 client.py -m send'"""),
-                stdout=subprocess.PIPE
-                # 'python3 client.py',
-                # shell=True
-                # creationflags=subprocess.CREATE_NEW_CONSOLE
-            ))
+            PROCESS.append(
+                subprocess.Popen('gnome-terminal -- python3 client.py -m send', shell=True))
         for i in range(3):
-            PROCESS.append(subprocess.Popen(
-                shlex.split("""x-terminal-emulator -e 'python3 client.py -m listen'"""),
-                stdout=subprocess.PIPE
-                # 'python3 client.py',
-                # shell=True
-                # creationflags=subprocess.CREATE_NEW_CONSOLE
-            ))
+            PROCESS.append(
+                subprocess.Popen('gnome-terminal -- python3 client.py -m listen', shell=True))
     elif ANSWER == 'x':
         while PROCESS:
             VICTIM = PROCESS.pop()
             VICTIM.kill()
+            VICTIM.terminate()
