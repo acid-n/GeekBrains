@@ -1,0 +1,34 @@
+# Все, что мы видим в Python - объекты
+# В том числе и строки, числа, классы и функции.
+# Это ведь классы! Оказывается у каждого из этих классов тоже есть класс - СВЕРХКЛАСС!
+
+AGE = 35
+print(AGE.__class__)
+
+NAME = 'Иван'
+print(NAME.__class__)
+
+
+def my_func():
+    pass
+
+
+print(my_func.__class__)
+
+
+
+class MyClass(object):
+    pass
+
+
+MC = MyClass()
+print(MC.__class__)
+
+
+# Получается каждый из этих объектов относится к классу, это мы знаем
+# а теперь самое интересное
+
+print(AGE.__class__.__class__)
+print(NAME.__class__.__class__)
+print(my_func.__class__.__class__)
+print(MC.__class__.__class__)
