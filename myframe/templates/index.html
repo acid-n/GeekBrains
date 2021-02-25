@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Index My Frame</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}
+Index My Frame
+{% endblock %}
+
+{% block body %}
+{% include "inc-menu.html" %}
 
 <h1>Обучение программированию: создаем свой web framework</h1>
 <h3>secret: {{secret}}</h3>
 
-</body>
-</html>
+{% endblock %}
