@@ -74,3 +74,33 @@ class Application:
         else:
             start_response('404 NOT FOUND', [('Content-Type', 'text/html')])
             return [b"Not Found"]
+
+
+# Новый вид WSGI-application.
+# Первый — логирующий (такой же, как основной,
+# только для каждого запроса выводит информацию
+# (тип запроса и параметры) в консоль.
+class DebugApplication(Application):
+
+    def __init__(self, urlpatterns, front_controllers):
+        self.application = Application(urlpatterns, front_controllers)
+        super().__init__(urlpatterns, front_controllers)
+
+    def __call__(self, env, start_response):
+        print('DEBUG MODE')
+        print(env)
+        return self.application(env, start_response)
+
+
+# Новый вид WSGI-application.
+# Второй — фейковый (на все запросы пользователя отвечает:
+# 200 OK, Hello from Fake).
+class FakeApplication(Application):
+
+    def __init__(self, urlpatterns, front_controllers):
+        self.application = Application(urlpatterns, front_controllers)
+        super().__init__(urlpatterns, front_controllers)
+
+    def __call__(self, env, start_response):
+        start_response('200 OK', [('Content-Type', 'text/html')])
+        return [b'Hello from Fake']
