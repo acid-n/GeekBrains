@@ -2,6 +2,8 @@ from frame import render, Application, DebugApplication, FakeApplication
 from models import TrainingSite, BaseSerializer, EmailNotifier, SmsNotifier
 from logging_mod import Logger, debug
 from frame.framecbv import ListView, CreateView
+from frameorm import UnitOfWork
+from mappers import MapperRegistry
 
 # Создание копирование курса, список курсов
 # Регистрация пользователя, список пользователей
@@ -11,6 +13,8 @@ site = TrainingSite()
 logger = Logger('main')
 email_notifier = EmailNotifier()
 sms_notifier = SmsNotifier()
+UnitOfWork.new_current()
+UnitOfWork.get_current().set_mapper_registry(MapperRegistry)
 
 
 def main_view(request):
@@ -65,14 +69,19 @@ class CategoryCreateView(CreateView):
         new_category = site.create_category(name, category)
         site.categories.append(new_category)
 
+
 class CategoryListView(ListView):
     queryset = site.categories
     template_name = 'category_list.html'
 
 
 class StudentListView(ListView):
-    queryset = site.students
+    # queryset = site.students
     template_name = 'student_list.html'
+
+    def get_queryset(self):
+        mapper = MapperRegistry.get_current_mapper('student')
+        return mapper.all()
 
 
 class StudentCreateView(CreateView):
@@ -83,6 +92,8 @@ class StudentCreateView(CreateView):
         name = Application.decode_value(name)
         new_obj = site.create_user('student', name)
         site.students.append(new_obj)
+        new_obj.mark_new()
+        UnitOfWork.get_current().commit()
 
 
 class AddStudentByCourseCreateView(CreateView):
@@ -128,7 +139,7 @@ application = Application(urlpatterns, front_controllers)
 
 # proxy
 # application = DebugApplication(urlpatterns, front_controllers)
-# application = FakeApplication(urlpatterns, front_controllers)
+# application = MockApplication(urlpatterns, front_controllers)
 
 
 @application.add_route('/copy-course/')
